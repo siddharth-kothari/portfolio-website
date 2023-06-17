@@ -1,28 +1,27 @@
 import {
-    mobile,
+   
     backend,
-    creator,
+    
     web,
     javascript,
-    typescript,
+    
     html,
     css,
-    reactjs,
-    redux,
+    reactjs,   
     tailwind,
-    nodejs,
-    mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
+    github,
+php,
+bootstrap,
+wordpress,
+mysql,
+    
+polaris,
+portfolio,
     tripguide,
-    threejs,
+    
+    i2e,
+    digilocker,
 } from "../assets";
 
 export const navLinks = [
@@ -82,24 +81,24 @@ const technologies = [
     },
     {
         name: "GitHub",
-        icon: git,
+        icon: github,
     },
     {
         name: "PHP",
-        icon: git,
+        icon: php,
     },
     {
         name: "BootStrap",
-        icon: tailwind,
+        icon: bootstrap,
     },
 
     {
         name: "WordPress",
-        icon: tailwind,
+        icon: wordpress,
     },
     {
         name: "MySQL",
-        icon: tailwind,
+        icon: mysql,
     },
 ];
 
@@ -107,7 +106,7 @@ const experiences = [
     {
         title: "Software Developer",
         company_name: "i2e Consulting",
-        icon: starbucks,
+        icon: i2e,
         iconBg: "#383E56",
         date: "Aug 2022 - Ongoing",
         points: [
@@ -120,7 +119,7 @@ const experiences = [
     {
         title: "Student Trainee",
         company_name: "i2e Consulting",
-        icon: tesla,
+        icon: i2e,
         iconBg: "#E6DEDD",
         date: "Mar 2022 - Aug 2022",
         points: [
@@ -133,7 +132,7 @@ const experiences = [
     {
         title: "UI/UX & Functionality Tester Intern",
         company_name: "DigiLocker",
-        icon: shopify,
+        icon: digilocker,
         iconBg: "#383E56",
         date: "Jan 2021 - May 2021",
         points: [
@@ -191,7 +190,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: tripguide,
         source_code_link: "https://github.com/",
     },
     {
@@ -212,7 +211,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: polaris,
         source_code_link: "https://github.com/",
     },
     {
@@ -233,7 +232,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: portfolio,
         source_code_link: "https://github.com/",
     },
 ];

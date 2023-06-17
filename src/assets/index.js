@@ -21,13 +21,17 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import php from "./tech/php.png";
+import bootstrap from "./tech/bootstrap.png";
+import wordpress from "./tech/wordpress.png";
+import mysql from "./tech/mysql.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import i2e from "./company/i2e-logo.jpg";
+import digilocker from "./company/digilocker.jpg";
+
+
+import polaris from "./polaris-store.png";
+import portfolio from "./portfolio-website.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -52,11 +56,15 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
+ 
+php,
+bootstrap,
+wordpress,
+mysql,
+  i2e,
+  digilocker,
+  
+  polaris,
+portfolio,
   tripguide,
 };
