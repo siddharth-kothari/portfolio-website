@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 
 
 import {styles} from '../styles';
-import { ComputersCanvas } from './canvas';
+//import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
   return (
@@ -18,9 +18,12 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop interactive and responsive Website.
           </p>
+          <p className="text-secondary lg:text-[25px] sm:text-[21px] xs:text-[18px] text-[16px] lg:leading-[40px] mt-5 font-semibold">
+            I'm a web developer specializing in frontend development. Currently I'm working at i2e Consulting as a Software Developer.
+          </p>
         </div>
       </div>
-        <ComputersCanvas />
+        {/* <ComputersCanvas /> */}
 
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
           <a href='#about'>

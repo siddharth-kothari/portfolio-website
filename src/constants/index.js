@@ -110,10 +110,10 @@ const experiences = [
         iconBg: "#383E56",
         date: "Aug 2022 - Ongoing",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Implemented 4-5 new features for company’s in-house project Pats!",
+            "Developed highly interactive and responsive webpages for a client project using PHP, HTML5 and JavaScript.",
+            "Added server side and client-side form validations and encryptions.",
+            "Created REST APIs for the integration of front-end elements.",
         ],
     },
     {
@@ -123,10 +123,9 @@ const experiences = [
         iconBg: "#E6DEDD",
         date: "Mar 2022 - Aug 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Created webpages for the company's website and external projects.",
+            "Wrote 2-3 API calls in PHP for some new features for the Pats! Application.",
+            "Worked on company's internal project called Pats along with other in-house projects.",
         ],
     },
     {
@@ -136,10 +135,10 @@ const experiences = [
         iconBg: "#383E56",
         date: "Jan 2021 - May 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Worked as a functional tester for different android applications and websites while ensuring adherence to defined design.",
+            "Tested organization’s site and versatile application to guarantee their smooth working.",
+            "Drafted 5+ point by point reports of loopholes and submitted to my lead.",
+            "Reported mistakes in the User Interface plan or usefulness for fixing.",
         ],
     },
 ];
