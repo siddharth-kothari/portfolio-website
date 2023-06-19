@@ -19,7 +19,7 @@ const Hero = () => {
             I develop interactive and responsive Website.
           </p>
           <p className="text-secondary lg:text-[25px] sm:text-[21px] xs:text-[18px] text-[16px] lg:leading-[40px] mt-5 font-semibold">
-            I&apos;m a web developer specializing in frontend development. Currently I&apos;m working at <span className="text-[#915eff]">i2e Consulting</span> as a Software Developer.
+            I&apos;m a web developer specializing in frontend development. <br />Currently I&apos;m working at <span className="text-[#915eff]">i2e Consulting</span> as a Software Developer.
           </p>
         </div>
       </div>

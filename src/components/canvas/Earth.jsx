@@ -1,20 +1,23 @@
 import { Suspense } from "react"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
+import { OrbitControls,Float, useGLTF } from "@react-three/drei"
 
 import CanvasLoader from '../Loader'
 
 const Earth = () => {
-  const earth = useGLTF('./planet/scene.gltf');
+  const earth = useGLTF('./planet/moon_walk/scene.gltf');
   
   return (
-    <primitive 
-      object={earth.scene}
-      scale={2.5}
-      position-y={0}
-      rotation-y={0}
-    />
-
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[0,0,0.05]} />
+      <primitive 
+        object={earth.scene}
+        scale={1.5}
+        position-y={-1.5}
+        rotation-y={0}
+      />
+    </Float>
   )
 }
 
@@ -34,6 +37,7 @@ const EarthCanvas = () => {
       <Suspense fallback={<CanvasLoader/>}>
         <OrbitControls
           autoRotate
+          autoRotateSpeed={1}
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
