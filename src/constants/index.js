@@ -34,8 +34,8 @@ export const navLinks = [
         title: "Work",
     },
     {
-        id: "resume",
-        title: "Resume",
+        id: "skills",
+        title: "Skills",
     },
     {
         id: "contact",
@@ -143,6 +143,42 @@ const experiences = [
     },
 ];
 
+const skills = [
+    {
+        title: "Frontend",
+        points: [
+            "React",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "jQuery",
+            "Bootstrap",
+            "Next js",
+            "tailwindcss",
+            "SEO",
+        ],
+    },
+    {
+        title: "Backend & Database",
+        points: [
+            "PHP",
+            "MySQL",
+            "MySQL Workbench",
+            "WordPress",
+            "Rest API",
+        ],
+    },
+    {
+        title: "Tools",
+        points: [
+            "Git",
+            "GitHub",
+            "Jira",
+            "VS Code",
+        ],
+    },
+];
+
 const testimonials = [
     // {
     //     testimonial:
@@ -236,4 +272,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, skills };
