@@ -18,7 +18,6 @@ mysql,
     
 polaris,
 portfolio,
-    tripguide,
     
     i2e,
     digilocker,
@@ -208,27 +207,6 @@ const testimonials = [
 
 const projects = [
     {
-        name: "AI Based Game Development ",
-        description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-        tags: [
-            {
-                name: "C++",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
-    },
-    {
         name: "Digital Video Game Store ",
         description:
             "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
@@ -247,7 +225,7 @@ const projects = [
             },
         ],
         image: polaris,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/siddharth-kothari/polaris-store",
     },
     {
         name: "Portfolio Website",
@@ -268,7 +246,7 @@ const projects = [
             },
         ],
         image: portfolio,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
     },
 ];
 
