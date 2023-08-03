@@ -22,6 +22,9 @@ module.exports = {
       // backgroundImage: {
       //   "hero-pattern": "url('/src/assets/herobg.png')",
       // },
+      fontFamily: {
+        'handjet': ['Handjet', 'cursive']
+      },
     },
   },
   plugins: [],
