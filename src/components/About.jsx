@@ -34,18 +34,18 @@ const ServiceCard = ({index, title, icon}) => {
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <div className='text-center'>
+      <motion.div variants={textVariant()} >
         <p className={ styles.sectionSubText }>Introduction</p>
         <h2 className={ styles.sectionHeadText }>Overview</h2>
         <motion.p 
           variants={fadeIn("","",0.1,1)}
-          className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-4 text-secondary text-[17px] text-center max-w-3xl leading-[30px] m-auto'
         >
           I am a skilled Software Developer with over a year of experience in PHP, HTML, JavaScript, CSS, ReactJs, REST APIs and MySQL tools. Creating website layouts and user interfaces using standard HTML/CSS practices is one of my core strengths. I believe that effective collaboration and communication are critical to delivering the best possible solutions. I also have experience integrating data from various back-end services and databases.
         </motion.p>
 
-        <div className='mt-20 flex flex-wrap gap-10'>
+        <div className='mt-10 flex justify-center flex-wrap gap-10'>
           {services.map((service,index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}
@@ -53,7 +53,7 @@ const About = () => {
 
         
       </motion.div>
-    </>
+    </div>
   )
 }
 

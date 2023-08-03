@@ -25,7 +25,7 @@ const SkillsCard = ({index, title, points}) => {
           >
             
             <h3 className='text-white text-[20px] font-bold'>{title}</h3>
-            <ul className="mt-5 list-disc ml-2 space-y-2">
+            <ul className="mt-5 list-disc ml-2 space-y-2 text-left">
           {points.map((point,index)=> (
             <li key={`skill-point-${index}`} className="text-white-100 text-[16px] pl-1 tracking-wider">
               {point}
@@ -44,12 +44,12 @@ const SkillsCard = ({index, title, points}) => {
 const Skills = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className='text-center'>
         <p className={ styles.sectionSubText }>What I bring to the table</p>
         <h2 className={ styles.sectionHeadText }>Skills</h2>
     
 
-        <div className='mt-10 flex flex-row justify-around w-full gap-10'>
+        <div className='mt-10 flex flex-wrap w-[70%] mx-auto justify-center gap-7'>
           {skills.map((skill,index) => (
             <SkillsCard key={skill.title} index={index} {...skill} />
           ))}
