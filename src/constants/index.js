@@ -21,6 +21,9 @@ portfolio,
     
     i2e,
     digilocker,
+    xie,
+  gbmm,
+  gvm
 } from "../assets";
 
 export const navLinks = [
@@ -29,8 +32,8 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "background",
+        title: "Background",
     },
     {
         id: "skills",
@@ -142,6 +145,30 @@ const experiences = [
     },
 ];
 
+const educations = [
+    {
+        title: "Bachelor of Engineering (IT)",
+        company_name: "Xavier Institute of Engineering, Mumbai",
+        icon: xie,
+        date: "Aug 2017 - Jul 2021",
+        points: "7.44 CGPA",
+    },
+    {
+        title: "Higher Secondary Certificate (11th & 12th)",
+        icon: gbmm,
+        company_name: "G.B.M.M Jr College",
+        date: "Jun 2015 - May 2017",
+        points: "67.38%",
+    },
+    {
+        title: "Secondary School Certificate (10th)",
+        company_name: "Bhartiya Vidya Bhavan's GVM, Hinganghat",
+        icon: gvm,
+        date: "Apr 2014 - Mar 2015",
+        points: "9.44 CGPA",
+    },
+];
+
 const skills = [
     {
         title: "Frontend",
@@ -250,4 +277,4 @@ const projects = [
     },
 ];
 
-export { services, technologies, experiences, testimonials, projects, skills };
+export { services, technologies, experiences,educations, testimonials, projects, skills };

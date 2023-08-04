@@ -35,6 +35,11 @@ import polaris from "./polaris-store.png";
 import portfolio from "./portfolio-website.png";
 import tripguide from "./tripguide.png";
 
+import xie from "./xie.png";
+import gbmm from "./gbmm.png";
+import gvm from "./gvm.png";
+
+
 export {
   logo,
   backend,
@@ -69,4 +74,7 @@ mysql,
 portfolio,
   tripguide,
   avatar,
+  xie,
+  gbmm,
+  gvm
 };
