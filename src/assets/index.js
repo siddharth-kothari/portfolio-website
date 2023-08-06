@@ -34,6 +34,7 @@ import digilocker from "./company/digilocker.jpg";
 import polaris from "./polaris-store.png";
 import portfolio from "./portfolio-website.png";
 import tripguide from "./tripguide.png";
+import journeyverse from "./journeyverse.png"
 
 import xie from "./xie.png";
 import gbmm from "./gbmm.png";
@@ -76,5 +77,6 @@ portfolio,
   avatar,
   xie,
   gbmm,
-  gvm
+  gvm,
+  journeyverse
 };

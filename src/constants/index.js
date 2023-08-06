@@ -23,7 +23,8 @@ portfolio,
     digilocker,
     xie,
   gbmm,
-  gvm
+  gvm,
+  journeyverse
 } from "../assets";
 
 export const navLinks = [
@@ -234,9 +235,9 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Digital Video Game Store ",
+        name: "Digital Video Game Store",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "A website where users can purchase games digitally.",
         tags: [
             {
                 name: "PHP",
@@ -257,7 +258,7 @@ const projects = [
     {
         name: "Portfolio Website",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A website to showcase my skills",
         tags: [
             {
                 name: "nextjs",
@@ -273,6 +274,27 @@ const projects = [
             },
         ],
         image: portfolio,
+        source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
+    },
+    {
+        name: "JourneyVerse",
+        description:
+            "A blog website where users can read and post blogs.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "strapi",
+                color: "green-text-gradient",
+            },
+            {
+                name: "nextAuth",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: journeyverse,
         source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
     },
 ];
