@@ -2,10 +2,11 @@
 
 
 
-
+import { AiOutlineInstagram, AiOutlineGithub, AiOutlineLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { styles } from "./../styles";
 import { motion } from "framer-motion";
 import { zoomIn } from "./../utils/motion";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,26 +14,26 @@ const Footer = () => {
       className={`${styles.paddingX} w-full flex items-center py-10 z-20 bg-primary`}
     >
       <div className="w-full block text-center md:flex justify-between items-center max-w-7xl mx-auto">
-        <p className="font-manrope mb-5 md:m-0">
+        <p className="font-poppins text-[18px] mb-5 md:m-0 text-[#915eff]">
           Developed by Siddharth Kothari
         </p>
 
         <ul className="list-none flex flex-row gap-10 justify-center">
           <li className={`cursor-pointer`}>
-            <a href="https://www.instagram.com/glam2door/" target="blank">
+            <Link to="https://instagram.com/_siddharthkothari_" target="blank">
               <motion.p
                 variants={zoomIn(0, 0.2)}
                 whileHover="show"
                 initial="hidden"
               >
-
+                <AiOutlineInstagram className='text-[#915eff] w-[28px] h-[28px]' />
               </motion.p>
-            </a>
+            </Link>
           </li>
 
           <li className={`cursor-pointer`}>
-            <a
-              href=""
+            <Link
+              to="https://github.com/siddharth-kothari"
               target="blank"
             >
               <motion.p
@@ -40,34 +41,37 @@ const Footer = () => {
                 whileHover="show"
                 initial="hidden"
               >
-
+                <AiOutlineGithub className='text-[#915eff] w-[28px] h-[28px]' />
               </motion.p>
-            </a>
+            </Link>
           </li>
 
           <li className={`cursor-pointer`}>
-            <a href="mailto:support@glam2door.com" target="blank">
+            <Link to="https://www.linkedin.com/in/siddharthkothari01/" target="blank">
               <motion.p
                 variants={zoomIn(0, 0.2)}
                 whileHover="show"
                 initial="hidden"
               >
-
+                <AiOutlineLinkedin className='text-[#915eff] w-[28px] h-[28px]' />
               </motion.p>
-            </a>
+            </Link>
           </li>
 
           <li className={`cursor-pointer`}>
-            <a href="tel:+919975136016" target="blank">
+            <Link to="mailto:sidkothari005@gmail.com" target="blank">
               <motion.p
                 variants={zoomIn(0, 0.2)}
                 whileHover="show"
                 initial="hidden"
               >
+                <AiOutlineMail className='text-[#915eff] w-[28px] h-[28px]' />
 
               </motion.p>
-            </a>
+            </Link>
           </li>
+
+
         </ul>
       </div>
     </footer>
