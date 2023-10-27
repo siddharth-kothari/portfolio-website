@@ -1,30 +1,31 @@
 import {
-   
+
     backend,
-    
+
     web,
     javascript,
-    
+
     html,
     css,
-    reactjs,   
+    reactjs,
     tailwind,
     git,
     github,
-php,
-bootstrap,
-wordpress,
-mysql,
-    
-polaris,
-portfolio,
-    
+    php,
+    bootstrap,
+    wordpress,
+    mysql,
+
+    polaris,
+    portfolio,
+
     i2e,
     digilocker,
     xie,
-  gbmm,
-  gvm,
-  journeyverse
+    gbmm,
+    gvm,
+    journeyverse,
+    glam2door
 } from "../assets";
 
 export const navLinks = [
@@ -297,6 +298,27 @@ const projects = [
         image: journeyverse,
         source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
     },
+    {
+        name: "Glam2Door",
+        description:
+            "A website for business that provides salon services to the customer in the comfort of there home.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwind css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "Framer Motion",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: glam2door,
+        source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
+    },
 ];
 
-export { services, technologies, experiences,educations, testimonials, projects, skills };
+export { services, technologies, experiences, educations, testimonials, projects, skills };

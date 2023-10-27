@@ -36,6 +36,8 @@ import portfolio from "./portfolio-website.png";
 import tripguide from "./tripguide.png";
 import journeyverse from "./journeyverse.png"
 
+import glam2door from "./glam2door.png"
+
 import xie from "./xie.png";
 import gbmm from "./gbmm.png";
 import gvm from "./gvm.png";
@@ -63,20 +65,21 @@ export {
   tailwind,
   typescript,
   threejs,
- 
-php,
-bootstrap,
-wordpress,
-mysql,
+
+  php,
+  bootstrap,
+  wordpress,
+  mysql,
   i2e,
   digilocker,
-  
+
   polaris,
-portfolio,
+  portfolio,
   tripguide,
   avatar,
   xie,
   gbmm,
   gvm,
-  journeyverse
+  journeyverse,
+  glam2door
 };
