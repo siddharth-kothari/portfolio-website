@@ -1,10 +1,7 @@
 import {
-
     backend,
-
     web,
     javascript,
-
     html,
     css,
     reactjs,
@@ -15,10 +12,8 @@ import {
     bootstrap,
     wordpress,
     mysql,
-
     polaris,
     portfolio,
-
     i2e,
     digilocker,
     xie,
