@@ -20,7 +20,7 @@ const Footer = () => {
 
         <ul className="list-none flex flex-row gap-10 justify-center">
           <li className={`cursor-pointer`}>
-            <Link to="https://instagram.com/_siddharthkothari_" target="blank">
+            <Link to="https://instagram.com/_siddharthkothari_" target="blank" aria-label="Siddharth's Instagram account">
               <motion.p
                 variants={zoomIn(0, 0.2)}
                 whileHover="show"
@@ -35,6 +35,7 @@ const Footer = () => {
             <Link
               to="https://github.com/siddharth-kothari"
               target="blank"
+              aria-label="Siddharth's GitHub account"
             >
               <motion.p
                 variants={zoomIn(0, 0.2)}
@@ -47,7 +48,7 @@ const Footer = () => {
           </li>
 
           <li className={`cursor-pointer`}>
-            <Link to="https://www.linkedin.com/in/siddharthkothari01/" target="blank">
+            <Link to="https://www.linkedin.com/in/siddharthkothari01/" target="blank" aria-label="Siddharth's LinkedIn account">
               <motion.p
                 variants={zoomIn(0, 0.2)}
                 whileHover="show"
@@ -59,7 +60,7 @@ const Footer = () => {
           </li>
 
           <li className={`cursor-pointer`}>
-            <Link to="mailto:sidkothari005@gmail.com" target="blank">
+            <Link to="mailto:sidkothari005@gmail.com" target="blank" aria-label="Siddharth's Email account">
               <motion.p
                 variants={zoomIn(0, 0.2)}
                 whileHover="show"
