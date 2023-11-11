@@ -1,17 +1,18 @@
+/* eslint-disable react/no-unknown-property */
 import { Suspense } from "react"
 import { Canvas } from "@react-three/fiber"
-import { OrbitControls,Float, useGLTF } from "@react-three/drei"
+import { OrbitControls, Float, useGLTF } from "@react-three/drei"
 
 import CanvasLoader from '../Loader'
 
 const Earth = () => {
   const earth = useGLTF('./planet/moon_walk/scene.gltf');
-  
+
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.5} />
-      <directionalLight position={[0,0,0.05]} />
-      <primitive 
+      <directionalLight position={[0, 0, 0.05]} />
+      <primitive
         object={earth.scene}
         scale={1.5}
         position-y={-1.5}
@@ -22,19 +23,19 @@ const Earth = () => {
 }
 
 const EarthCanvas = () => {
-  return(
+  return (
     <Canvas
       shadows
       frameloop="demand"
-      gl={{preserveDrawingBuffer: true}}
+      gl={{ preserveDrawingBuffer: true }}
       camera={{
-        fov:45,
-        near:0.1,
+        fov: 45,
+        near: 0.1,
         far: 200,
         position: [-4, 3, 6]
       }}
     >
-      <Suspense fallback={<CanvasLoader/>}>
+      <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           autoRotate
           autoRotateSpeed={1}
