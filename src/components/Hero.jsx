@@ -11,6 +11,7 @@ const Hero = () => {
           <img
             src={avatar}
             width={250}
+            height={250}
             alt='avatar'
           />
         </div>
