@@ -8,9 +8,9 @@ const Hero = () => {
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} grid h-screen text-center place-content-center max-w-7xl mx-auto -mt-12`}>
         <div className='flex flex-col justify-center items-center mt-5'>
-          <img loading="lazy"
+          <img
             src={avatar}
-            className='w-[250px]'
+            width={250}
             alt='avatar'
           />
         </div>
