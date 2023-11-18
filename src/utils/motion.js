@@ -37,14 +37,20 @@ export const fadeIn = (direction, type, delay, duration) => {
     };
 };
 
-export const zoomIn = (delay, duration) => {
+export const zoomIn = (delay, duration, scale = 1) => {
     return {
         hidden: {
             scale: 1,
             opacity: 1,
+            transition: {
+                type: "tween",
+                delay: delay,
+                duration: duration,
+                ease: "easeOut",
+            },
         },
         show: {
-            scale: 1.25,
+            scale: scale,
             opacity: 1,
             transition: {
                 type: "tween",
