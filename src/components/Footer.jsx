@@ -60,7 +60,7 @@ const Footer = () => {
           </li>
 
           <li className={`cursor-pointer`}>
-            <Link to="mailto:sidkothari005@gmail.com" target="blank" aria-label="Siddharth's Email account">
+            <Link to="mailto:hi@siddharthkothari.com" target="blank" aria-label="Siddharth's Email account">
               <motion.p
                 variants={zoomIn(0, 0.2)}
                 whileHover="show"
