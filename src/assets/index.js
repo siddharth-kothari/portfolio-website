@@ -8,6 +8,8 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import avatar from "./avatar.png";
 
+import logo from "./logo1.png";
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -71,7 +73,7 @@ export {
   mysql,
   i2e,
   digilocker,
-
+  logo,
   polaris,
   portfolio,
   tripguide,
