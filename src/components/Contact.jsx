@@ -61,7 +61,7 @@ const Contact = () => {
 
     } else {
 
-      emailjs.send('service_6ww6zse', 'template_q5obace',
+      emailjs.send('service_q7wcc8p', 'template_q5obace',
         {
           from_name: form.name,
           to_name: 'Siddharth',
