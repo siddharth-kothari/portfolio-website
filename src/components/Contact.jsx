@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react-refresh/only-export-components */
 import { useState, useRef } from "react"
 import { motion } from "framer-motion"
@@ -7,10 +8,13 @@ import { styles } from "../styles"
 import { EarthCanvas } from "./canvas"
 import { sectionWrapper } from "../hoc"
 import { slideIn } from "../utils/motion"
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const Contact = () => {
+  const recaptcha = useRef();
   const formRef = useRef();
+  const [errors, setErrors] = useState({});
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -28,28 +32,63 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true)
 
-    emailjs.send('service_6ww6zse', 'template_q5obace',
-      {
-        from_name: form.name,
-        to_name: 'Siddharth',
-        from_email: form.email,
-        to_email: 'hi@siddharthkothari.com',
-        reply_to: form.email,
-        message: form.message,
-      }, '7IhcmksCjWYhimJRb'
-    ).then(() => {
-      setLoading(false);
-      alert('Thanks for reaching out to me. I will get back to you as soon as possible.');
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      }, (error) => {
+    const validationErrors = {};
+
+    if (form.name.trim() === "") {
+      validationErrors.name = "Name is required";
+    }
+
+    if (form.email.trim() === "") {
+      validationErrors.email = "Email is required";
+    }
+
+    if (form.message.trim() === "") {
+      validationErrors.message = "Message is required";
+    }
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setLoading(false)
+      return;
+    }
+
+    const captchaValue = recaptcha.current.getValue();
+
+    if (!captchaValue) {
+
+      setLoading(false)
+      alert("Please verify the reCAPTCHA!");
+
+    } else {
+
+      emailjs.send('service_6ww6zse', 'template_q5obace',
+        {
+          from_name: form.name,
+          to_name: 'Siddharth',
+          from_email: form.email,
+          to_email: 'hi@siddharthkothari.com',
+          reply_to: form.email,
+          message: form.message,
+        }, '7IhcmksCjWYhimJRb'
+      ).then(() => {
         setLoading(false);
-        console.log(error);
-        alert('Something went wrong.')
+        alert('Thanks for reaching out to me. I will get back to you as soon as possible.');
+        setErrors({});
+        recaptcha.current.reset()
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        }, (error) => {
+          setLoading(false);
+          console.log(error);
+          alert('Something went wrong.')
+        })
       })
-    })
+
+    }
+
+
   }
 
   return (
@@ -79,6 +118,11 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 rounded-lg font-medium text-white outline-none placeholder:text-secondary border-none"
 
             />
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.name}
+              </p>
+            )}
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
@@ -91,6 +135,11 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 rounded-lg font-medium text-white outline-none placeholder:text-secondary border-none"
 
             />
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.email}
+              </p>
+            )}
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
@@ -103,7 +152,14 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 rounded-lg font-medium text-white outline-none placeholder:text-secondary border-none"
 
             />
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">
+                {errors.message}
+              </p>
+            )}
           </label>
+
+          <ReCAPTCHA ref={recaptcha} sitekey="6LfTfRQpAAAAALZaAX6szdFBZYBHUw1nvDo01mXo" />
 
           <button
             type="submit"
