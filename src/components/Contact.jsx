@@ -66,7 +66,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: 'Siddharth',
           from_email: form.email,
-          to_email: 'hi@siddharthkothari.com',
+          to_email: 'siddharth.kothari.1@icloud.com',
           reply_to: form.email,
           message: form.message,
         }, '7IhcmksCjWYhimJRb'
