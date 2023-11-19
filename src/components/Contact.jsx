@@ -61,12 +61,12 @@ const Contact = () => {
 
     } else {
 
-      emailjs.send('service_q7wcc8p', 'template_q5obace',
+      emailjs.send('service_q7wcc8p', 'template_1vlyneu',
         {
           from_name: form.name,
-          to_name: 'Siddharth',
+          to_name: 'Siddharth Kothari',
           from_email: form.email,
-          to_email: 'siddharth.kothari.1@icloud.com',
+          to_email: 'hi@siddharthkothari.com',
           reply_to: form.email,
           message: form.message,
         }, '7IhcmksCjWYhimJRb'
