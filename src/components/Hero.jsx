@@ -16,7 +16,7 @@ const Hero = () => {
           />
         </div>
         <div className=''>
-          <h1 className={`${styles.heroHeadText}`}>Hi, I&apos;m <span className="text-[#915eff]"> Siddharth</span></h1>
+          <h1 className={`${styles.heroHeadText}`}>Hi, I&apos;m <span className="text-[#915eff]"> Siddharth, Test env</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I develop interactive and responsive Website.
           </p>
