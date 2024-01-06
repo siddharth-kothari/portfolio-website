@@ -9,6 +9,8 @@ import close from "./close.svg";
 import avatar from "./avatar.png";
 
 import logo from "./logo1.png";
+import website from "./website.png";
+import laptop from "./laptop.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -37,6 +39,7 @@ import polaris from "./polaris-store.png";
 import portfolio from "./portfolio-website.png";
 import tripguide from "./tripguide.png";
 import journeyverse from "./journeyverse.png"
+import cartify from "./cartify.png"
 
 import glam2door from "./glam2door.png"
 
@@ -82,5 +85,8 @@ export {
   gbmm,
   gvm,
   journeyverse,
-  glam2door
+  glam2door,
+  cartify,
+  website,
+  laptop
 };

@@ -13,14 +13,15 @@ import {
     wordpress,
     mysql,
     polaris,
-    portfolio,
+    //portfolio,
     i2e,
     digilocker,
     xie,
     gbmm,
     gvm,
     journeyverse,
-    glam2door
+    glam2door,
+    cartify
 } from "../assets";
 
 export const navLinks = [
@@ -250,28 +251,30 @@ const projects = [
         ],
         image: polaris,
         source_code_link: "https://github.com/siddharth-kothari/polaris-store",
+        is_live: true,
+        live_link: "http://polaris-store.epizy.com/?i=1"
     },
-    {
-        name: "Portfolio Website",
-        description:
-            "A website to showcase my skills",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "reactjs",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwindcss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: portfolio,
-        source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
-    },
+    // {
+    //     name: "Portfolio Website",
+    //     description:
+    //         "A website to showcase my skills",
+    //     tags: [
+    //         {
+    //             name: "nextjs",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "reactjs",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "tailwindcss",
+    //             color: "pink-text-gradient",
+    //         },
+    //     ],
+    //     image: portfolio,
+    //     source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
+    // },
     {
         name: "JourneyVerse",
         description:
@@ -292,6 +295,8 @@ const projects = [
         ],
         image: journeyverse,
         source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
+        is_live: false,
+        live_link: ""
     },
     {
         name: "Glam2Door",
@@ -312,7 +317,32 @@ const projects = [
             },
         ],
         image: glam2door,
-        source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
+        source_code_link: "/",
+        is_live: true,
+        live_link: "https://www.glam2door.com/"
+    },
+    {
+        name: "Cartify",
+        description:
+            "Cartify, a go-to e-commerce destination featuring a diverse array of products.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Tailwind css",
+                color: "green-text-gradient",
+            },
+            {
+                name: "next-auth",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: cartify,
+        source_code_link: "https://github.com/siddharth-kothari/cartify",
+        is_live: true,
+        live_link: "https://cartify.siddharthkothari.com/"
     },
 ];
 
