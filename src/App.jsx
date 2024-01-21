@@ -5,8 +5,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
-
-
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
