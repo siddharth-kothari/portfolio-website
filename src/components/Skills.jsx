@@ -79,7 +79,7 @@ const Skills = () => {
 
       moveBy += directionFactor.current * moveBy * velocityFactor.get();
 
-      baseX.set(baseX.get() + moveBy);
+      // baseX.set(baseX.get() + moveBy);
     });
 
     /**
@@ -92,11 +92,11 @@ const Skills = () => {
     return (
       <div className="parallax overflow-hidden m-0 whitespace-nowrap flex flex-nowrap">
         <motion.div className="scroller font-extrabold uppercase flex whitespace-nowrap flex-nowrap" style={{ x }}>
-          <span className='flex gap-5 mr-7'>{children} </span>
-          <span className='flex gap-5 mr-7'>{children} </span>
-          <span className='flex gap-5 mr-7'>{children} </span>
-          <span className='flex gap-5 mr-7'>{children} </span>
-          <span className='flex gap-5 mr-7'>{children} </span>
+          <span className='flex gap-2 md:gap-5 mr-7'>{children} </span>
+          <span className='flex gap-2 md:gap-5 mr-7'>{children} </span>
+          <span className='flex gap-2 md:gap-5 mr-7'>{children} </span>
+          <span className='flex gap-2 md:gap-5 mr-7'>{children} </span>
+          <span className='flex gap-2 md:gap-5 mr-7'>{children} </span>
         </motion.div>
       </div>
     );
@@ -111,14 +111,14 @@ const Skills = () => {
 
       <div className='mt-10'>
         {skills.map(({ points }, index) => (
-          <div key={index} className='flex gap-4 whitespace-nowrap'>
+          <div key={index} className='flex gap-2 md:gap-4 whitespace-nowrap'>
             <ParallaxText baseVelocity={`${index % 2 === 0 ? -1.5 : 1.5}`}>
               {points.map((point, index) => (
-                <div key={index} className='mb-10 flex gap-5 whitespace-nowrap items-center'>
-                  <span key={`skill-point-${index}`} className=" !m-0 text-4xl text-[3rem] leading-[3rem] font-extrabold pl-1 blue-text-gradient tracking-tighter uppercase">
+                <div key={index} className='mb-5 md:mb-10 flex gap-2 md:gap-5 whitespace-nowrap items-center'>
+                  <span key={`skill-point-${index}`} className=" !m-0 text-3xl md:text-[2.5rem] md:leading-[3rem] font-extrabold blue-text-gradient tracking-tighter uppercase">
                     {point}
                   </span>
-                  <span className='text-2xl blue-text-gradient'>
+                  <span className='md:text-2xl blue-text-gradient'>
                     <MdCircle className="pink-text-gradient" />
                   </span>
                 </div>
