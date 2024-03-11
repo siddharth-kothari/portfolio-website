@@ -1,15 +1,13 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { Tilt } from "react-tilt"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { styles } from "../styles"
-import { website, laptop } from "../assets";
+import { website } from "../assets";
 import { sectionWrapper } from "../hoc";
 import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-import React, { useEffect, useRef } from "react";
-import Lenis from '@studio-freight/lenis'
+import { textVariant } from "../utils/motion";
+import React, { useRef } from "react";
 
 const ProjectCard = ({ index, name, description, tags, image, color, live_link, progress, targetScale, range }) => {
 
