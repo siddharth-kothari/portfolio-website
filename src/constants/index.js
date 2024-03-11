@@ -252,29 +252,9 @@ const projects = [
         image: polaris,
         source_code_link: "https://github.com/siddharth-kothari/polaris-store",
         is_live: true,
-        live_link: "http://polaris-store.epizy.com/?i=1"
+        live_link: "http://polaris-store.epizy.com/?i=1",
+        color: "#BBACAF"
     },
-    // {
-    //     name: "Portfolio Website",
-    //     description:
-    //         "A website to showcase my skills",
-    //     tags: [
-    //         {
-    //             name: "nextjs",
-    //             color: "blue-text-gradient",
-    //         },
-    //         {
-    //             name: "reactjs",
-    //             color: "green-text-gradient",
-    //         },
-    //         {
-    //             name: "tailwindcss",
-    //             color: "pink-text-gradient",
-    //         },
-    //     ],
-    //     image: portfolio,
-    //     source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
-    // },
     {
         name: "JourneyVerse",
         description:
@@ -296,7 +276,8 @@ const projects = [
         image: journeyverse,
         source_code_link: "https://github.com/siddharth-kothari/portfolio-website",
         is_live: false,
-        live_link: ""
+        live_link: "",
+        color: "#977f6d"
     },
     {
         name: "Glam2Door",
@@ -319,7 +300,8 @@ const projects = [
         image: glam2door,
         source_code_link: "/",
         is_live: true,
-        live_link: "https://www.glam2door.com/"
+        live_link: "https://www.glam2door.com/",
+        color: "#c2491d"
     },
     {
         name: "Cartify",
@@ -342,7 +324,8 @@ const projects = [
         image: cartify,
         source_code_link: "https://github.com/siddharth-kothari/cartify",
         is_live: true,
-        live_link: "https://cartify.siddharthkothari.com/"
+        live_link: "https://cartify.siddharthkothari.com/",
+        color: "#b62429"
     },
 ];
 

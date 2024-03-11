@@ -79,7 +79,7 @@ const Skills = () => {
 
       moveBy += directionFactor.current * moveBy * velocityFactor.get();
 
-      // baseX.set(baseX.get() + moveBy);
+      baseX.set(baseX.get() + moveBy);
     });
 
     /**
