@@ -22,7 +22,7 @@ const ProjectCard = ({ index, name, description, tags, image, color, live_link, 
   console.log(targetScale);
   return (
     <div ref={container} className="cardContainer mx-auto h-[100vh] grid place-content-center sticky top-0">
-      <motion.div style={{ boxShadow: "-1px 0px 30px 5px rgba(47,128,237,1)", scale: containerScale, top: `calc(-15% + ${index * 35}px)` }} className={`mx-auto relative bg-tertiary card w-[80%] min-h-[500px] rounded-lg p-6`}>
+      <motion.div style={{ boxShadow: "0px 0px 8px 2px rgba(47,128,237,1)", scale: containerScale, top: `calc(-15% + ${index * 35}px)` }} className={`mx-auto relative bg-tertiary card sm:w-[80%] min-h-[500px] rounded-lg p-6`}>
         <h2 className="text-center text-2xl md:text-4xl font-extrabold font-sans mb-10">{name}</h2>
         <div className="lg:flex lg:gap-5 items-center lg:justify-between">
           <div className="imageContainer relative mx-auto lg:w-[50%] h-full rounded-2xl overflow-hidden">
