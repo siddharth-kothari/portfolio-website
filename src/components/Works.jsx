@@ -27,7 +27,7 @@ const ProjectCard = ({ index, name, description, tags, image, color, live_link, 
         <div className="lg:flex lg:gap-5 items-center lg:justify-between">
           <div className="imageContainer relative mx-auto lg:w-[50%] h-full rounded-2xl overflow-hidden">
             <motion.div style={{ scale: imageScale }} className="inner w-full h-full">
-              <img loading="lazy" src={image}
+              <img src={image}
                 alt={name}
                 className=" object-cover"
               />
@@ -67,18 +67,6 @@ const Works = () => {
     offset: ['start start', 'end end']
   })
 
-  // useEffect(() => {
-
-  //   const lenis = new Lenis();
-
-  //   function raf(time) {
-  //     lenis.raf(time);
-  //     requestAnimationFrame(raf)
-  //   }
-
-  //   requestAnimationFrame(raf)
-  // }, [])
-
   return (
     <div ref={containers}>
       <motion.div
@@ -98,4 +86,4 @@ const Works = () => {
   )
 }
 
-export default sectionWrapper(Works, "work")
+export default sectionWrapper(Works, "projects")

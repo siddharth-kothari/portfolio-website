@@ -104,6 +104,9 @@ const Skills = () => {
 
   return (
     <section>
+      <span className="hash-span" id="skills">
+        &nbsp;
+      </span>
       <motion.div variants={textVariant()} className='text-center'>
         <p className={styles.sectionSubText}>What I bring to the table</p>
         <h2 className={styles.sectionHeadText}>Skills</h2>
