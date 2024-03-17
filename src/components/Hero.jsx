@@ -3,7 +3,7 @@
 import { avatar } from '../assets';
 import { styles } from '../styles';
 import { motion } from 'framer-motion'
-import { fadeIn, textVariant } from '../utils/motion'
+import { textVariant } from '../utils/motion'
 
 const Hero = () => {
   return (
