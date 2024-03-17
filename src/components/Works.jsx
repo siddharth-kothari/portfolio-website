@@ -19,7 +19,7 @@ const ProjectCard = ({ index, name, description, tags, image, color, live_link, 
   const imageScale = useTransform(scrollYProgress, [0, 1], [2, 1]);
 
   const containerScale = useTransform(progress, range, [1, targetScale]);
-  console.log(targetScale);
+  //console.log(targetScale);
   return (
     <div ref={container} className="cardContainer mx-auto h-[100vh] grid place-content-center sticky top-0">
       <motion.div style={{ boxShadow: "0px 0px 8px 2px rgba(47,128,237,1)", scale: containerScale, top: `calc(-15% + ${index * 35}px)` }} className={`mx-auto relative bg-tertiary card sm:w-[80%] min-h-[500px] rounded-lg p-6`}>

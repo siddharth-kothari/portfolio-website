@@ -81,7 +81,6 @@ const Contact = () => {
           message: '',
         }, (error) => {
           setLoading(false);
-          console.log(error);
           alert('Something went wrong.')
         })
       })
